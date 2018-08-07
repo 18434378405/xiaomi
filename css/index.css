@@ -2,7 +2,9 @@
     margin:0 ;
     padding: 0;
 }
-body{
+.home-main{
+    width: 1499px;
+    height: 4758px;
     background: #f5f5f5;
 }
 .header{
@@ -29,7 +31,6 @@ a{
     height: 40px;
     background: #333333;
     float: left;
-    margin-left: 61px;
 }
 .header-right{
     width: 273px;
@@ -175,6 +176,7 @@ a{
     float: right;
     margin-left: 78px;
     margin-top: 25px;
+    position: relative;
 }
 li .list{
     margin-left: 0;
@@ -184,6 +186,46 @@ li .list1{
 }
 .ico1 li:hover{
     color: white;
+}
+.ico2 input{
+    width: 246px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+}
+.ico2 .ico2_left{
+    height: 16px;
+    position: absolute;
+    top: 18px;
+    left: 93px;
+    background: #EEEEEE;
+    font-size: 12px;
+}
+.ico2 .ico2_right{
+    height: 16px;
+    position: absolute;
+    top: 18px;
+    left: 138px;
+    background: #EEEEEE;
+    font-size: 12px;
+}
+.ico2 .ico2_left:hover,.ico2 .ico2_right:hover,.ico2 .ico2-right:hover i{
+    background: #FF6700;
+    color: #fff;
+}
+.ico2-right{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ico2-right .icon-sousuo{
+    font-size: 24px;
+    line-height: 50px;
+    color: #000;
+    border: 1px solid #e0e0e0;
+    padding:9px 14px 11px 10px;
 }
 .down{
     width: 1226px;
@@ -1157,6 +1199,7 @@ li .list1{
     margin-top: 45px;
 }
 .product-left{
+    margin-left: -3px;
     width: 80px;
     height: 12px;
     background: #ffffff;
@@ -1184,6 +1227,7 @@ li .list1{
     color: #333333;
 }
 .product-left4{
+    margin-left: -7px;
     width: 161px;
     height: 12px;
     background: #ffffff;
@@ -1191,6 +1235,9 @@ li .list1{
     padding-right: 7px;
     float: left;
     color: #333333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .product-right{
     float: left;
@@ -1436,13 +1483,13 @@ li .list1{
     color: #b0b0b0;
     margin-top: 13px;
 }
-.finally-up{
+/* .finally-up{
     width: 1226px;
     height: 60px;
     background: #f5f5f5;
     margin: auto;
-}
-.finally-up .iconfont .icon-weixiu{
+} */
+.finally .iconfont .icon-weixiu{
     font-size: 60px;
 }
 .finally{
@@ -1512,6 +1559,9 @@ li .list1{
     clear: left;
     color: #867575;
 }
+.finally4 .li1:hover{
+    color: #ff6700;
+}
 .finally5{
     width: 250px;
     height: 112px;
@@ -1549,7 +1599,10 @@ li .list1{
     padding-left: 27px;
     padding-right: 28px;
     text-align: center;
-    
+}
+.icon-xiaoxi:hover{
+    background: #ff6700;
+    color: #fff;
 }
 .finally5 h3:last-child{
     color: #ff6700;
@@ -1586,6 +1639,10 @@ li .list1{
     font-size: 12px;
     color: #fff;
     padding: 16px 30px 0;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
 }
 .video56 h3:last-child{
     font-size: 12px;
