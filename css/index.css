@@ -46,7 +46,7 @@ a{
     color: #b6b6b6;
     text-align: center;
     line-height: 40px;
-    border-right : 1px solid #393d42;
+    border-right : 1px solid #3f423c;
     padding-right: 5px;
 }
 .rim1{
@@ -82,12 +82,12 @@ a{
     color: #b6b6b6;
     text-align: center;
     line-height: 40px;
-    border-right: 1px solid #393d42;
+    border-right: 1px solid #3f423c;
     padding-right: 5px;
 }
 .frame1{
     margin-left: 0;
-    border-right: 1px solid #393d42;
+    border-right: 1px solid #3f423c;
     padding-right: 5px;
 }
 .frame2{
@@ -295,7 +295,7 @@ li .list1{
 .down img{
     width: 100%;
     height: 100%;
-    background: red;
+   /*  background: red; */
     display: block;
     position:absolute;
     top:0;
@@ -524,7 +524,7 @@ li .list1{
 .little{
     width: 234px;
     height: 340px;
-    background: #fbfbfb;
+    background: rgba(0, 0, 0, 0.02);
     margin-right: 14px;
     float: left;
 }
@@ -532,19 +532,19 @@ li .list1{
     float: right;
     margin-right: 0;
     background: #fafafa;
-    border-top: 1px solid #746369;
+    border-top: 1px solid red;
 }
 .little2{
     background: #f2ecee;
-    border-top: 1px solid #7e6165;
+    border-top: 1px solid red;
 }
 .little3{
     background: #fafafa;
-    border-top: 1px solid #a5a79a;
+    border-top: 1px solid green;
 }
 .little4{
     background: #fafafa;
-    border-top: 1px solid #6d7e85;
+    border-top: 1px solid blue;
 }
 .little5{
     background: #fafafa;
@@ -1482,8 +1482,8 @@ li .list1{
     transform: translateY(-4px);
     box-shadow: 0 15px 30px  rgba(0, 0, 0, 0.1);
 }
-.mas1:hover {
-     background: #ff6700;
+.mas-down:hover .mas1{
+    background: #ff6700;
 }
 .mas .mas-down1{
     margin-right: 0;
@@ -1542,7 +1542,7 @@ li .list1{
     padding-bottom: 27px;
     border-bottom: 1px solid #e0e0e0;
 }
-.finally .finally1 i{ 
+.finally .finally1 a{ 
     display: block;
     float: left;
     margin-left: 27px;
@@ -1553,6 +1553,9 @@ li .list1{
     padding-right: 54px;
     color: #616161;
 }
+.finally .finally1 a:last-child{
+    border-right: 0;
+} 
 .finally-big{
     width: 1226px;
     height: 112px;
