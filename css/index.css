@@ -548,7 +548,7 @@ li .list1{
 }
 .little5{
     background: #fafafa;
-    border-top: 1px solid #b5ae94;
+    border-top: 1px solid #ff6700;
 }
 .lightning1{
     width: 80px;
@@ -613,9 +613,11 @@ li .list1{
     margin-right: 0;
 }
 .bag1{
+    margin-top: 30px;
     margin-left: 43px;
 }
 .bag2{
+    margin-top: -28px;
     margin-left: 10px;
     color: #0b0b0b;
 }
@@ -646,9 +648,11 @@ li .list1{
     margin-top: 26px;
 }
 .backpack1{
+    margin-top: 30px;
     margin-left: 32px;
 }
 .backpack2{
+    margin-top: -28px;
     margin-left: 10px;
     color: #0b0b0b;
 }
@@ -673,9 +677,11 @@ li .list1{
     color: #a5a5a5;
 }
 .mouse1{
+    margin-top: 30px;
     margin-left: 37px;
 }
 .mouse2{
+    margin-top: -28px;
     margin-left: 10px;
     text-align: center;
     color: #0b0b0b;
@@ -701,9 +707,11 @@ li .list1{
     color: #a5a5a5;
 }
 .glasses1{
+    margin-top: 30px;
     margin-left: 16px;
 }
 .glasses2{
+    margin-top: -28px;
     margin-left: 0;
     text-align: center;
     color: #0b0b0b;
@@ -1262,7 +1270,6 @@ li .list1{
     font-weight: 400;
 }
 .product-left4{
-    margin-left: -7px;
     width: 161px;
     height: 12px;
     background: #ffffff;
