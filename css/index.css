@@ -111,18 +111,22 @@ a{
 }
 .shopping1{
     width: 316px;
-    height: 100px;
+    height: 0px;
     background: #fff;
     float: right;
-    position: absolute;
+    position: absolute;     
+    top: 40px;
     left: -196px;
-    display: none;
+   /*  display: none; */
     font-size: 12px;
     color: #757575;
     text-align: center;
     line-height: 100px;
-    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    overflow: hidden;
+    z-index: 20;
+    transition: all .8s;
 }
+
 .frame-right:hover{
     background: #fff;
 
@@ -130,10 +134,10 @@ a{
 .frame-right:hover .shopping{
     color: #ff6700;
 }
-.frame-right:hover .shopping1{
+/* .frame-right:hover .shopping1{
     display: block;
     z-index: 9;
-}
+} */
     
 .frame-right:hover .icon-gouwuche{
     color: #ff6700;
@@ -237,6 +241,11 @@ li .list1{
     margin: auto;
     position: relative;
 }
+.down22{
+    width: 1226px;
+    height: 460px;
+    background: brown;
+}
 .video30{
     width: 41px;
     height: 69px;
@@ -255,9 +264,10 @@ li .list1{
     position: absolute;
     right: 0;
     top: 50%;
-    z-index: 999;
+    z-index: 99;
     background: rgba(0, 0, 0, 0);
     background-position: -42px;
+
 } 
 .video20:hover{
     background-image: url('../img/images/pic15.png');
@@ -273,6 +283,7 @@ li .list1{
     display: block;
     margin-bottom: 25px;
     margin-right: 35px;
+    z-index: 20;
 }
 .down .book1 li{
     width: 6px;
@@ -289,10 +300,18 @@ li .list1{
     border: 2px solid rgba(161, 155, 145, 1);
     margin-right: 0;
 }
-.down .book1 li:hover{
-    background: #ffffff;
+.down .book1 .hot{
+    background: #fff;
 }
-.down img{
+/* .down .book1 li:hover{
+    background: #ffffff;
+}  */
+.down .picture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.down .picture img{
     width: 100%;
     height: 100%;
    /*  background: red; */
@@ -300,6 +319,7 @@ li .list1{
     position:absolute;
     top:0;
     left:0;
+
 }
 .down .down1{
     width: 236px;
@@ -310,6 +330,7 @@ li .list1{
     position:absolute;
     top:0;
     left:0;
+    z-index: 20;
 }
 .mobile1:hover{
     background: #ff6700;
@@ -330,6 +351,7 @@ li .list1{
     color: #ffefca;
     text-align: center;
     line-height: 42px;
+    float: right;
 }
 .mobile1 li:first-child{
     float: left;
@@ -339,6 +361,28 @@ li .list1{
     float: right;
     margin-right: 24px;
 }
+.mobile2-box{
+    width: 992px;
+    height: 460px;
+    background: red;
+
+    position: absolute;
+    top: 0;
+    left: 236px;
+    display: none;
+    z-index: 999;
+}
+
+/* .mobile2-box{
+    width: 992px;
+    height: 460px;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 236px;
+    display: none;
+    z-index: 999;
+} */
 .mobile2{
     width: 100%;
     height: 42px;
@@ -350,6 +394,7 @@ li .list1{
     color: #ffefca;
     text-align: center;
     line-height: 42px;
+    float: right;
 }
 .mobile2 li:first-child{
     float: left;
@@ -825,7 +870,15 @@ li .list1{
     height: 656px;
     background: #f5f5f5;
     margin: auto;
-    position:relative;
+    position: relative;
+}
+.homedownBox{
+    width: 1226px;
+    height: 614px;
+    background: red;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .video{
     width: 234px;
@@ -1748,7 +1801,7 @@ li .list1{
 .finish_top_left .finish2,.end .finish2 a{color: #B0B0B7;}
 .finish_top_left a{
     display: block;
-    height: 13px;
+    height: 19px;
     float: left;
     padding: 0 5px 0 4px;
     border-right: 1px solid #B0C0D6;

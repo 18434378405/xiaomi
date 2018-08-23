@@ -28,12 +28,13 @@
                 <a href="" class="frame frame2">消息通知</a>
             </div>
             <div class="frame-right">
+                <div class="shopping1">购物车中还没有商品，赶紧选购吧！</div>
                 <a href="" class="">
                     <i class="iconfont icon-gouwuche"></i>
                 </a>
-                <a href="" class="shopping">购物车(0)
-                    <div class="shopping1">购物车中还没有商品，赶紧选购吧！</div>
-                </a>
+                <a href="" class="shopping">购物车(0)</a>
+                    
+                
                 
             </div>
         </div>
@@ -72,16 +73,42 @@
         </div>
     </div>
 <div class="down">
-        <div class="picture">
-            <a href="">
+    <ul class="down22">
+        <li class="picture"` style="z-index: 10">
+            <a href="" class="">
                 <img src="img/images/picture.jpg" alt="">
             </a>
-        </div>
-
+        </li>
+        <li class="picture">
+            <a href="" class="">
+                <img src="img/images/picture1.jpg" alt="">
+            </a>
+        </li>
+        <li class="picture">
+            <a href="" class="">
+                <img src="img/images/picture2.jpg" alt="">
+            </a>
+        </li>
+        <li class="picture">
+            <a href="" class="">
+                <img src="img/images/picture3.jpg" alt="">
+            </a>
+        </li>
+        <li class="picture">
+            <a href="" class="">
+                <img src="img/images/picture4.jpg" alt="">
+            </a>
+        </li>
+        <li class="picture">
+            <a href="" class="">
+                <img src="img/images/picture5.jpg" alt="">
+            </a>
+        </li>
+    </ul>
         <div class="book1">
                     <a href="">
                         <ul>
-                            <li></li>
+                            <li class="hot"></li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -92,70 +119,80 @@
                 </div>
         <div class="down1">
             <a href="mobile">
-                <div class="mobile1">
-                    <li>手机 电话卡</li>
+                <div class="mobile2 mobile1">
+                    <li>手机 电话卡 </li>
                     <li>&gt;</li>
-                </div>
+                    <div class="mobile2-box">小米</div>
+            </div>
             </a>
             <a href="mobile">
                 <div class="mobile2">
                     <li>电视 盒子</li>
                     <li>&gt;</li>
+                    <div class="mobile2-box">米粉</div>
                 </div>
             </a>
             <a href="mobile">
                 <div class="mobile2">
                     <li>笔记本 平板</li>
                     <li>&gt;</li>
+                <div class="mobile2-box">大米粉</div>
                 </div>
             </a>
             <a href="mobile">
                 <div class="mobile2">
                     <li>智能 家电</li>
                     <li>&gt;</li>
+                <div class="mobile2-box">小米粉</div>
                 </div>
             </a> 
             <a href="mobile">
                 <div class="mobile2">
                     <li>健康 家居</li>
                     <li>&gt;</li>
+                <div class="mobile2-box">小米手机</div>
                 </div>
             </a> 
             <a href="mobile">
                 <div class="mobile2">
                     <li>出行 儿童</li>
                     <li>&gt;</li>
+                <div class="mobile2-box">红米手机</div>
                 </div>
             </a> 
             <a href="mobile">
                 <div class="mobile2">
                     <li>路由器 手机配件</li>
                     <li>&gt;</li>
+                <div class="mobile2-box">红米note</div>
                 </div>
             </a> 
             <a href="mobile">
                 <div class="mobile2">
                     <li>移动电源 插线板</li>
                     <li>&gt;</li>
+                <div class="mobile2-box">红米2</div>
                 </div>
             </a> 
             <a href="mobile">
                 <div class="mobile2">
                     <li>耳机 音箱</li>
                     <li>&gt;</li>
+                <div class="mobile2-box">米呀米</div> 
                 </div>
             </a> 
             <a href="mobile">
                 <div class="mobile2">
                     <li>生活 米兔</li>
                     <li>&gt;</li>
+                <div class="mobile2-box">米啊米</div>
                 </div>
             </a>
      </div>
-     <a href="" class="">
+     <a href="javascript:;" class="">
         <div class="video30"></div>
      </a>
-    <a href="" class="">
+    <a href="javascript:;" class="">
         <div class="video20"></div>
     </a> 
 </div>
@@ -327,6 +364,7 @@
         </div>
     </div>
     <div class="home-down">
+        <div class="homedownBox">
         <a href="" class="video">
             <img src="img/images/logo6_30.png" alt="">
         </a>
@@ -351,8 +389,6 @@
                 <h3 class="">来自于陈金壮的评价</h3>
             </div>
         </a>
-
-
         <a href="" class="video">
             <div class="tv1">减200元</div>
             <div class="tv">
@@ -458,6 +494,10 @@
                 </div>
             </div>
         </a>
+    </div>
+   <!--  <div class="homedownBox"></div>
+    <div class="homedownBox"></div>
+    <div class="homedownBox"></div> -->
     </div>
     <div class="handset">
         <div class="handset-left">
@@ -605,6 +645,7 @@
                 <div class="tv4-right">999元</div>
             </div>
         </a>
+
     </div>
     <div class="home-up">
         <div class="home1">
@@ -1381,4 +1422,120 @@
 
 
 
-</body></html>
+</body>
+</html>
+<script>
+            // 购物车
+        let frameRight=document.getElementsByClassName("frame-right")
+            // console.log(frameRight)
+         let shopping1=document.getElementsByClassName("shopping1")
+                // console.log(shopping1)
+         frameRight[0].onmouseenter=function(){
+                shopping1[0].style.height="100px";
+                shopping1[0].style.boxShadow="0px 15px 30px rgba(0,0,0,.1)"
+            }
+         
+         frameRight[0].onmouseleave=function(){
+                shopping1[0].style.height="0px";
+                shopping1[0].style.boxShadow="none" 
+            }
+
+            // 侧导航
+        
+    let mobile2=document.getElementsByClassName("mobile2")
+    let mobile2Box=document.getElementsByClassName("mobile2-box")
+    let video33=document.getElementsByClassName("video30")[0]
+    for(let i=0;i<mobile2.length;i++){
+     mobile2[i].onmouseenter=function(){
+            mobile2Box[i].style.display="block"
+            video33.style.display="none"
+        }
+         mobile2[i].onmouseleave=function(){
+            mobile2Box[i].style.display="none"
+        }
+}
+
+
+        let home2=document.getElementsByClassName("home2")[0]
+        console.log(home2)
+        let homedownBox=document.getElementsByClassName("homedownBox")
+        console.log(homedownBox)
+        let lis=home2.getElementsByTagName("li");
+        console.log(lis)
+
+        // 轮播图
+
+        let down22=document.getElementsByClassName("down22")[0]
+        console.log(down22)
+        let lis1=down22.getElementsByTagName("li")
+        console.log(lis1)
+        
+        let book1=document.getElementsByClassName("book1")[0]
+        console.log(book1)
+        let lis2=book1.getElementsByTagName("li")
+        console.log(lis2)
+        let video20=document.getElementsByClassName("video20")[0]
+        let video30=document.getElementsByClassName("video30")[0]
+        console.log(video20,video30)
+        // let hot=document.getElementsByClassName("hot")
+        // console.log(hot)
+          
+        let num=0;
+        let t=setInterval(move,1000)
+        down22.onmouseenter=function(){
+            clearInterval(t)
+        }
+        down22.onmouseleave=function(){
+            t=setInterval(move,1000)
+        }
+        video20.onmouseenter=function(){
+            clearInterval(t)
+        }
+        video20.onmouseleave=function(){
+            t=setInterval(move,1000)
+        }
+        video30.onmouseenter=function(){
+            clearInterval(t)
+        }
+        video30.onmouseleave=function(){
+            t=setInterval(move,1000)
+        }
+        video20.onclick=function(){
+            move() 
+           
+        }
+        video30.onclick=function(){
+            moveL()
+        }
+
+        function move(){
+            num++
+            if(num==lis1.length){
+                num=0;
+            }
+            for(let i=0;i<lis1.length;i++){
+                lis1[i].style.zIndex="5"
+                lis2[i].className=""
+            }
+            lis1[num].style.zIndex="10"
+            lis2[num].className="hot"
+
+
+        }
+        function moveL(){
+            num--
+            if(num<0){
+                num=lis1.length-1;
+            }
+            for(let i=0;i<lis1.length;i++){
+                lis1[i].style.zIndex="5"
+                lis2[i].className=""
+            }
+            lis1[num].style.zIndex="10"
+            lis2[num].className="hot"
+            num=i;
+        }
+        
+        
+
+</script>
