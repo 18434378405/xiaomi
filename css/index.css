@@ -364,13 +364,32 @@ li .list1{
 .mobile2-box{
     width: 992px;
     height: 460px;
-    background: red;
-
+    background: white;
     position: absolute;
     top: 0;
     left: 236px;
     display: none;
     z-index: 999;
+}
+.mobile2-box1{
+    width: 248px;
+    height: 76.7px;
+/*     background: pink;*/ 
+    float: left;
+    position: relative;
+}
+.mobile2-box1:hover{
+    color: #ff6700;
+}
+.mobile2-box img{
+    width: 40px;
+    height: 40px;
+    padding: 15px 20px;
+}
+.mobile2-box span{
+   position: absolute;
+   left: 60px;
+   bottom: 30px;
 }
 
 /* .mobile2-box{
@@ -560,7 +579,7 @@ li .list1{
 .box2{
     width: 1226px;
     height: 383px;
-    background: #fbfbfb;
+    background: #fff;
     display: block;
    /*  position:absolute;
     top:0;
@@ -820,45 +839,27 @@ li .list1{
     font-weight: normal;
 }
 .home2{
-    width: 249px;
     height: 40px;
     background: #f5f5f5;
     float: right;
     margin-top: 20px;
 }
 .home2-up{
-    width: 249px;
     height: 16px;
     background: #f5f5f5;
 }
 .home2-up li{
     border-bottom: 2px solid #f5f5f5;
     padding-bottom: 4px;
-}
-.home2-up a li:hover{
-    color: #ff6700;
-    border-bottom: 2px solid #ff6700;
-}
-.home2-up li:nth-child(2){
     font-size: 16px;
     margin-right: 29px;
     color: #424242;
-}
-.home2-up li:nth-child(3){
-    font-size: 16px;
-    margin-right: 29px;
-    color: #424242;
+    float: left;
 }
 .home2-up li:last-child{
-    font-size: 16px;
     margin-right: 0;
-    color: #424242;
 }
-.home2-up li:first-child{
-    font-size: 16px;
-    margin-right: 30px;
-    color: #424242;
-}
+
 .home2-down{
     width: 32px;
     height: 2px;
@@ -871,14 +872,42 @@ li .list1{
     background: #f5f5f5;
     margin: auto;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 .homedownBox{
-    width: 1226px;
+    width: 992px;
     height: 614px;
-    background: red;
+    background: #f5f5f5;
     position: absolute;
     top: 0;
     right: 0;
+}
+.homedownBox1{
+    width: 992px;
+    height: 614px;
+    background: #f5f5f5;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.homedownBox2{
+    width: 992px;
+    height: 614px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.homedownleft{
+    width: 234px;
+    height: 614px;
+}
+.homedownright{
+    width: 992px;
+    height: 614px;
+    margin-left: 14px;
 }
 .video{
     width: 234px;
@@ -902,22 +931,8 @@ li .list1{
     transform: none;
     box-shadow: none;
 }
-/* .video .video1{
-    transform: translateY(-4px);
-    box-shadow: 0 5px 100px 5px rgba(0, 0, 0, 0.2);
-} */
-/* .video .small1{
-    width: 234px;
-    height: 100px;
-    background: #ff6700;
-    position: absolute;
-    right: 0;
-    bottom: -100px;
-    overflow: hidden;
-    box-shadow: 0 5px 100px 5px rgba(0, 0, 0, 0.2); 
-}   */
 
-.tv{
+.tv img{
     width: 163px;
     height: 137px;
     background: #ffffff;
@@ -1242,6 +1257,7 @@ li .list1{
     height: 415px;
     background: #f5f5f5;
     margin: auto;
+    position: relative;
 }
 .product1:hover{
     transform: translateY(-4px);
@@ -1254,6 +1270,8 @@ li .list1{
     float: left;
     margin-right: 14px;
     transition: all .2s linear;
+    position: relative;
+    overflow: hidden;
 }
 .product1:last-child{
     margin-right: 0;
@@ -1342,12 +1360,25 @@ li .list1{
     margin-left: 9px;
     color: #ff8200;
 }
-.product .matter1{
+.product .matter1 .matterBox{
     width: 296px;
     height: 414px;
     background: #ffffff;
     border-top: 1px solid #ff8200;
     display: block;
+    position: absolute;
+    left: 296px;
+    top: 0;
+}
+.product .matter1 .matterBox:first-child{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.product .matter1 .video30{
+    position: absolute;
+    left: 0;
+    top: 208px;
 }
 .product .matter1 h4{
     color: #ff8200;
@@ -1380,6 +1411,9 @@ li .list1{
     background: #ffffff;
     border-top: 1px solid #83c44e;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 310px;
 }
 .product .matter2 h4{
     color: #83c44e;
@@ -1412,6 +1446,9 @@ li .list1{
     background: #ffffff;
     border-top: 1px solid #e53935;
     display: block;
+    position: absolute;
+    top: 0;
+    right: 295px;
 }
 .product .matter3 h4{
     color: #e53935;
@@ -1446,6 +1483,9 @@ li .list1{
     background: #ffffff;
     border-top: 1px solid #2196f3;
     display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .product .matter4 h4{
     color: #2196f3;
@@ -1490,8 +1530,11 @@ li .list1{
     width: 82px;
     height: 10px;
     background: #ffffff;
-    margin: auto;
-    margin-top: 35px;
+    position: absolute;
+    bottom: 43px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 .product li{
     width: 6px;
@@ -1513,7 +1556,7 @@ li .list1{
 .product li:first-child{
     margin-right: 0px;
 }
-#book-for{
+.product .matter1 .book .book-for{
     border:2px solid #ff6700;
     background:#ffffff
 }
