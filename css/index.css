@@ -148,6 +148,59 @@ a{
     background: #ffffff;
     margin: auto;
 }
+.hz{
+    width: 100%;
+    height: 0;
+    background: #fff;
+    position: absolute;
+    top: 140px;
+    left: 0;
+ /*    display: none; */
+    transition: all .5s;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.hz .hzBox{
+    width: 1226px;
+    height: 230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.hz .hzBox img{
+    width: 160px;
+    height: 110px;
+    margin-top: 10px;
+}
+.hz .hz1{
+    width: 72px;
+    height: 22px;
+    background: #fff;
+    border: 1px solid #ff6700;
+    margin: 0 auto;
+}
+.hz .hz1 span{
+    color: #ff6700;
+    font-size: 10px;
+    line-height: 22px;
+}
+.hz .hzbox{
+     width: 204px;
+     height: 201px;
+     
+ }
+.hz .hzbox h3{
+    font-size: 10px;
+    color: #333333;
+    font-weight: normal;
+}
+.hz .hzbox h4{
+    font-size: 10px;
+    color: #ff6700;
+    font-weight: normal;
+}
 .ico{
     width: 55px;
     height: 55px;
@@ -581,9 +634,26 @@ li .list1{
     height: 383px;
     background: #fff;
     display: block;
+    overflow: hidden;
+    position: relative;
    /*  position:absolute;
     top:0;
     left:0; */
+}
+.box20{
+    width: 992px;
+    height: 341px;
+    margin-left: 248px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.box21{
+    width: 2232px;
+    height: 341px;
+    transition: all 2s;
 }
 .little{
     width: 234px;
@@ -593,13 +663,12 @@ li .list1{
     float: left;
 }
 .little1{
-    float: right;
-    margin-right: 0;
+    margin-right: 14px;
     background: #fafafa;
     border-top: 1px solid red;
 }
 .little2{
-    background: #f2ecee;
+    background: #fafafa;
     border-top: 1px solid red;
 }
 .little3{
