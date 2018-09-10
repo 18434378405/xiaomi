@@ -3654,6 +3654,7 @@
 </html>
 <script>
             // 购物车
+       
         let frameRight=document.getElementsByClassName("frame-right")
          let shopping1=document.getElementsByClassName("shopping1")
          frameRight[0].onmouseenter=function(){
@@ -3681,7 +3682,7 @@
 //             video33.style.display="block"
 //         }
 // }    
-
+        
         $(".mobile2").hover(function(){
             let index=$(this).index()
             console.log(index)
@@ -3830,8 +3831,8 @@
 
 
 
-        let t=setInterval(run,1000)
-        let index=0;
+    let t=setInterval(run,2000)
+    let index=0;
     function run(type="video20"){
         if(type=="video20"){
             index++
@@ -3848,31 +3849,39 @@
             }
             $(".down22 li").css("z-index","5").eq(index).css("z-index","10")
             $(".book1 li").removeClass("hot").eq(index).addClass("hot")
-        }
-        
-        
-    }
+        } 
+    } 
+    $(".book1 li").click(function(){
+            $(".down22 li").css("z-index","5").eq($(this).index()).css("z-index","10")
+            $(".book1 li").removeClass("hot").eq($(this).index()).addClass("hot")
+        })
     $(".video20").click(function(){
         run("video20");
     })
     $(".video30").click(function(){
         run("video30");
     })
-    $(".down22").hover(function(){
+   
+    $(".down").hover(function(){
         clearInterval(t)
     },function(){
         t=setInterval(run,1000)
     })
-     $(".video30").hover(function(){
-        clearInterval(t)
-    },function(){
-        t=setInterval(run,1000)
-    })
-      $(".video20").hover(function(){
-        clearInterval(t)
-    },function(){
-        t=setInterval(run,1000)
-    })
+    // $(".video30").hover(function(){
+    //     clearInterval(t)
+    // },function(){
+    //     t=setInterval(run,1000)
+    // })
+    // $(".video20").hover(function(){
+    //     clearInterval(t)
+    // },function(){
+    //     t=setInterval(run,1000)
+    // })
+    // $(".book1 li").hover(function(){
+    //     clearInterval(t)
+    // },function(){
+    //     t=setInterval(run,1000)
+    // })
 
 
         // 双下标轮播图
@@ -4039,6 +4048,7 @@
             $(".hz").css("border-top","")
             $(".hz").css("boxShadow","")
         })
+
 
     
 
