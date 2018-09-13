@@ -996,7 +996,7 @@ li .list1{
 .video:hover .video56{
     bottom: 0;
 }
-.video:last-child:hover{
+.video2:hover{
     transform: none;
     box-shadow: none;
 }
